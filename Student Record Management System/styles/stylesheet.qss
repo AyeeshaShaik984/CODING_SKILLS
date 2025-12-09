@@ -1,0 +1,108 @@
+/* Window backgrounds */
+QMainWindow {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #000000,
+                                stop:1 #00695c);
+}
+
+QDialog {
+    background: qradialgradient(cx:0.5, cy:0.5, radius:1.0,
+                                fx:0.5, fy:0.5,
+                                stop:0 #000000,
+                                stop:1 #004d40);
+}
+
+/* Center card on start dialog */
+#startCard {
+    background-color: rgba(0, 77, 64, 0.9);
+    border-radius: 18px;
+}
+
+/* Input group */
+QGroupBox {
+    border: 1px solid #029fa7;
+    border-radius: 18px;
+    margin-top: 12px;
+    padding: 18px 24px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #232526,
+                                stop:1 #029fa7);
+    font-weight: bold;
+    color: #eafffc;
+}
+
+QLabel {
+    color: #eafffc;
+    font-weight: 500;
+}
+
+/* Input fields */
+QLineEdit {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #222831,
+                                stop:1 #029fa7);
+    color: #eafffc;
+    border-radius: 13px;
+    font-size: 18px;
+    font-family: "Segoe UI","Arial",sans-serif;
+    font-weight: 500;
+    padding: 10px 18px;
+    border: 2px solid #029fa7;
+    margin: 6px 0;
+    box-shadow: 0 2px 16px #029fa744;
+}
+QLineEdit:focus {
+    border-color: #29e3e6;
+    background: #1f2933;
+}
+
+/* Buttons */
+QPushButton {
+    background: #232323;
+    color: #29e3e6;
+    border-radius: 18px;
+    font-size: 16px;
+    font-family:"Segoe UI","Arial",sans-serif;
+    font-weight:bold;
+    min-width:140px;
+    min-height:40px;
+    padding-left:24px;
+    padding-right:24px;
+    margin:10px;
+    border:none;
+    box-shadow:0 8px 24px #029fa755;
+}
+QPushButton:hover {
+    background: #029fa7;
+    color: #232526;
+    box-shadow:0 0 36px #029fa777;
+}
+QPushButton:pressed {
+    background:#00695c;
+}
+
+/* Table area */
+QTableWidget {
+    background: rgba(24,40,56,0.95);
+    border-radius: 18px;
+    color:#29e3e6;
+    border:none;
+    box-shadow:0 8px 32px #029fa73a;
+    font-weight:500;
+    padding:8px;
+    font-size:15px;
+}
+QHeaderView::section {
+    background:#029fa7;
+    color:#232526;
+    font-size:17px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    height:34px;
+}
+QTableWidget::item {
+    background: transparent;
+    border:none;
+    font-size:15px;
+}
